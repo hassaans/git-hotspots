@@ -1,11 +1,14 @@
 {
-  "name": "git-hotspots",
+  "name": "@hassaans/git-hotspots",
   "version": "0.1.0",
   "description": "Identify frequently co-changed files in a git repository",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
     "git-hotspots": "dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "tsup",
