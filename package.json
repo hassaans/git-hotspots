@@ -1,0 +1,24 @@
+{
+  "name": "git-hotspots",
+  "version": "0.1.0",
+  "description": "Identify frequently co-changed files in a git repository",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "git-hotspots": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "verify": "tsc --noEmit && vitest run"
+  },
+  "keywords": ["git", "hotspots", "coupling", "analysis"],
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
+  }
+}
